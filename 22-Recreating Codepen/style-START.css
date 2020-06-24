@@ -1,3 +1,6 @@
+:root {
+  --grey: #343436
+}
 html {
   box-sizing: border-box;
   font-family: "Lato", "Lucida Grande", "Lucida Sans Unicode", Tahoma,
@@ -28,3 +31,104 @@ h6 {
   font-size: 1.5em;
 }
 
+.codepen {
+  display: grid;
+  grid-template-rows: auto 1fr 1fr auto;
+  height: 100vh;
+}
+
+.codepen >* {
+  border: 1px solid black;
+  color: white;
+}
+
+/* Editor */
+.code {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  background: #1b2b34;
+  grid-gap: 5px;
+}
+
+.editor {
+  display: grid;
+  grid-template-rows: auto 1fr;
+}
+
+.editor__header {
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  align-items: center;
+  padding: 10px;
+  grid-gap: 5px;
+  background: rgba(0, 0, 0, 0.1);
+}
+
+
+.editor__code {
+  display: grid;
+  grid-template-columns: auto 1fr;
+}
+
+.editor__number {
+  display: block;
+}
+
+.editor__input {
+  background: none;
+  resize: none;
+  border: 0;
+  font-size: 16px;
+  color: grey;
+  line-height: 19px;
+}
+
+/* Pen Header */
+.pen {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-auto-flow: column;
+  align-items: center;
+  grid-gap: 10px;
+  background: black;
+  border-bottom: 1px solid var(--grey);
+  color: white;
+  padding: 10px;
+}
+
+.preview {
+  display: grid;
+}
+
+/* Buttons */
+.button {
+  background: var(--grey);
+  border: 0;
+  color: white;
+  font-size: 15px;
+  padding: 10px;
+  border-radius: 5px;
+  position: relative;
+}
+
+.button--small {
+  font-size: 12px;
+  padding: 4px;
+}
+
+.button--dirty:before {
+  background: #ffc600;
+  display: block;
+  content: '';
+  height: 2px;
+  position: absolute;
+  width: calc(100% - 6px);
+  left: 3px;
+  top: 3px;
+}
+
+.settings {
+  background: black;
+  padding: 5px;
+  border-top: 1px solid --var(grey);
+}
