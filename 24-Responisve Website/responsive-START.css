@@ -83,3 +83,27 @@ img {
 [aria-controls = "menu-list" ] {
   display: none;
 }
+
+
+/* Features */
+.features {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  grid-gap: 10px;
+}
+
+.feature {
+  background: white;
+  padding: 10px;
+  border: 1px solid white;
+  text-align: center;
+  box-shadow: 0 0  4px rgba(0,0,0,0.5);
+}
+
+.feature .icon {
+  font-size: 50px;
+}
+
+.feature p {
+  color: rgba(0,0,0,0.5);
+}
