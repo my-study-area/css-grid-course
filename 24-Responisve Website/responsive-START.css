@@ -12,6 +12,12 @@ img {
   max-width: 100%;
 }
 
+/* Wrapper */
+.wrapper {
+  display: grid;
+  grid-gap: 20px;
+}
+
 .top {
   display: grid;
   grid-template-areas: 
@@ -63,7 +69,6 @@ img {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
   grid-gap: 10px;
-  margin: 20px 0;
   padding: 0;
   list-style: none;
   color: var(--black);
@@ -106,4 +111,13 @@ img {
 
 .feature p {
   color: rgba(0,0,0,0.5);
+}
+
+/* About Section */
+.about {
+  display: grid;
+  grid-template-columns: 400px 1fr;
+  background: white;
+  padding: 50px;
+  align-items: center;
 }
