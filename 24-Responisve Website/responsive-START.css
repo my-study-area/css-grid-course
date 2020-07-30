@@ -51,6 +51,10 @@ img {
   align-content: center;
 }
 
+.cta p {
+  margin: 0;
+}
+
 .cta1 {
   grid-area: cta1;
 }
