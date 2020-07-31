@@ -199,6 +199,16 @@ img {
       "hero hero"
       "cta1 cta2";
   }
+
+  .about {
+    grid-template-columns: 1fr;
+  }
+
+  .about__details {
+    padding-top: 40px;
+    text-align: center;
+  }
+
 }
 
 @media (max-width: 500px) {
@@ -207,5 +217,9 @@ img {
       "hero"
       "cta1"
       "cta2";
+  }
+
+  .about {
+    grid-template-columns: 1fr;
   }
 }
